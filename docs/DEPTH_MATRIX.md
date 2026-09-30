@@ -7,7 +7,7 @@ Update this table when melting. Status words mean what they say:
 | stub | Thin cue only. Usable as a reminder, not a playbook. |
 | melted | Real Grok skill: when-to-use, steps, measurable checks, example, output shape. |
 
-Never copy Claude plugin / agent / command totals into this inventory. Upstream [LibreGameDev-Claude-Code](https://github.com/HermeticOrmus/LibreGameDev-Claude-Code) is proof that the *job* exists, not a count this repo has earned.
+Never copy Claude plugin / agent / command totals into this inventory. Upstream [claude-code-game-development](https://github.com/HermeticOrmus/claude-code-game-development) is proof that the *job* exists, not a count this repo has earned. (The melt sources below were read in LibreGameDev-Claude-Code, now archived; its game plugins continue in claude-code-game-development under the same `plugins/<name>` paths.)
 
 | ID | Kind | Status | Source (Claude, for melt) | Notes |
 |----|------|--------|---------------------------|-------|
@@ -24,7 +24,17 @@ Never copy Claude plugin / agent / command totals into this inventory. Upstream 
 
 This repo now: **3 melted skills**, **6 stub skills**, **1 stub agent**.
 
-Dogfood copies of every skill live at `.grok/skills/<name>/SKILL.md` and must match `skills/<name>/SKILL.md`.
+Where they live: melted skills in `plugins/libre-gamedev-grok/skills/<name>/SKILL.md` (the plugin installs them); stubs in `stubs/<name>/SKILL.md` (nothing installs them); the agent in `AGENTS/gamedev-orchestrator.md`.
+
+Dogfood copies of every skill live at `.grok/skills/<name>/SKILL.md` and must match the canonical file above. CI checks it.
+
+## Pack entries (installed, not melted)
+
+The marketplace also lists the game plugins of [claude-code-game-development](https://github.com/HermeticOrmus/claude-code-game-development) as remote entries: **22 entries**, all pinned to one pack commit (the `sha` in `.grok-plugin/marketplace.json`). Grok reads those plugin folders as they are. They are not counted in the melted inventory above.
+
+Which pack plugins: the pack's `gaming` category, selected in `scripts/pin-pack.sh` with `.plugins[] | select(.category == "gaming")`. That is the 20 game plugins, `libre-gamedev-hooks`, and `game-development` (Seth Hobson, [wshobson/agents](https://github.com/wshobson/agents), MIT). The pack's other plugins are general development plugins derived from wshobson/agents and are not part of this edition.
+
+`scripts/pin-pack.sh` re-pins them; CI fails when the pack gains or loses a game plugin.
 
 ## Depth / quality (ladder, not inventory)
 
