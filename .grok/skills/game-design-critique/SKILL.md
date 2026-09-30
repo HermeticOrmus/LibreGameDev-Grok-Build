@@ -7,7 +7,7 @@ description: Engine-agnostic critique of a player verb, loop, or short encounter
 
 Daily critique loop for **one verb**, **one loop**, or **one short encounter**. Truth over flattery. Measurable findings beat "needs juice."
 
-Gold Hat: teach the *why* of each finding. A list of defects extracts attention; a reusable rule empowers the next encounter. If a change would manipulate attention, time, or money without the player understanding the deal, it does not ship — see [GOLD_HAT.md](../../GOLD_HAT.md).
+Gold Hat: teach the *why* of each finding. A list of defects extracts attention; a reusable rule empowers the next encounter. If a change would manipulate attention, time, or money without the player understanding the deal, it does not ship; see [GOLD_HAT.md](https://github.com/HermeticOrmus/LibreGameDev-Grok-Build/blob/main/GOLD_HAT.md).
 
 Godot-agnostic. Unity-agnostic. Unreal- and web-agnostic. Do not open with scene trees, MonoBehaviours, or Blueprint nodes. If the finding is "this node is wired wrong," that is an engine leftover for `godot-patterns` or `unity-patterns` (stubs). Stay on the design.
 
@@ -159,4 +159,4 @@ A pass is done when every finding is specific, ranked, and remediable, and the *
 
 ## Suite
 
-Doctrine: [grok-build-reality-os](https://github.com/HermeticOrmus/grok-build-reality-os). Gold Hat: [GOLD_HAT.md](../../GOLD_HAT.md). Sibling Libre*-Grok-Build packs: [README suite footer](../../README.md).
+Doctrine: [grok-build-reality-os](https://github.com/HermeticOrmus/grok-build-reality-os). Gold Hat: [GOLD_HAT.md](https://github.com/HermeticOrmus/LibreGameDev-Grok-Build/blob/main/GOLD_HAT.md). Sibling Libre*-Grok-Build packs: [README suite footer](https://github.com/HermeticOrmus/LibreGameDev-Grok-Build/blob/main/README.md).
