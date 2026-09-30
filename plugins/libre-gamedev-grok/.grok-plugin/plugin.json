@@ -1,0 +1,11 @@
+{
+  "name": "libre-gamedev-grok",
+  "version": "1.0.0",
+  "description": "Grok-native LibreGameDev skills: game-loop feel, engine-agnostic design critique, and playtest planning. Each names the verb or the goal first, uses measurable checks, and ends in an output shape.",
+  "author": {
+    "name": "Diego Bodart",
+    "url": "https://github.com/HermeticOrmus"
+  },
+  "repository": "https://github.com/HermeticOrmus/LibreGameDev-Grok-Build",
+  "license": "MIT"
+}
